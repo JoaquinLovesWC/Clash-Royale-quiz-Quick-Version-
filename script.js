@@ -78,6 +78,11 @@ const decks = [
     }
 ]
 
+const modeDisplay = document.querySelector(".mode-display");
+const userInput = document.querySelector(".user-input");
+const quizSettings = document.querySelector(".quiz-setting")
+const beginQuizBtn = document.querySelector(".start-btn")
+
 function generateRandomDeck(){
     const randInt = Math.floor(Math.random()* decks.length);
     console.log(`Random deck chosen is ${decks[randInt].name}`);
